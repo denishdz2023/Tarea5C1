@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <div class="menú">
+            <h1>Menú</h1>
+            <hr>
+            <ol class="listasMenu">
+                <li>Hamburguesa con papas--------------------------------------$5</li>
+                <li>Tacos de Birria----------------------------------------------------$7.50</li>
+                <li>Nachos-----------------------------------------------------------------$4</li>
+            </ol>
+
+            <h2>Bebidas</h2>
+            <ol class="listasMenu">
+                <li>Coca-Cola----------------------------------------------------------------$1</li>
+                <li>Uva-------------------------------------------------------------------------$1</li>
+                <li>Fanta----------------------------------------------------------------------$1</li>
+            </ol>
+
+            <hr>
+
+        <div class="seleccionarMenu">
+
+            <label for="nombre">Cliente:</label>
+            <input type="text" name="" id="nombreCliente"><br>
+
+            <select name="producto" id="comidas">
+                <OPtgroup label="comidas">
+                <option>Hamburguesa con papas</option>
+                <option>Tacos de birria</option>
+                <option>Nachos</option>
+                </OPtgroup>
+            </select>
+            <input type="number" name="cantidad" id="cantidadC" min="1" value="0">
+
+            <select name="producto" id="bebidas">
+                <OPtgroup label="Bebidas">
+                <option >Coca-Cola</option>
+                <option >Uva</option>
+                <option >Fanta</option>
+                </OPtgroup>
+            </select>
+            <input type="number" name="cantidad" id="cantidadB" min="1" value="0">
+        
+        </div>
+            
+
+    <input class="btns" type="button" value="Enviar Orden" onclick="enviarPedido()">
+            
+        </div>
+
+        <div class="cocina">
+            <h1>Cocina</h1>
+            <hr>
+            <div class="pedido" id="pedido">
+            </div>
+
+        </div>
+
+
+        <div class="gestiónCliente">
+            <h1>Gestion Cliente</h1>
+            <hr>
+            <div id="estado">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
